@@ -11,6 +11,7 @@ class BukuController extends Controller
 {
     public function index(Request $request){
         $data =[
+            'databuku' =>Buku::all(),
             'kategori' =>Kategori::all(),
             'penerbit'=>Penerbit::all()
         ];
