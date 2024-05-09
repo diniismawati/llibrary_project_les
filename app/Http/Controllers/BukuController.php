@@ -10,12 +10,13 @@ use Illuminate\Http\Request;
 class BukuController extends Controller
 {
     public function index(Request $request){
-        $data =[
-            'databuku' =>Buku::all(),
-            'kategori' =>Kategori::all(),
-            'penerbit'=>Penerbit::all()
-        ];
-        return view('bukus', $data);
+        // $data =[
+        //     'databuku' =>Buku::all(),
+        //     'kategori' =>Kategori::all(),
+        //     'penerbit'=>Penerbit::all()
+        // ];
+        // return view('bukus', $data);
+        return view('page.buku.index');
     }
 
     public function buku(Request $request){

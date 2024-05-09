@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PinjamBukuController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BukuController;
@@ -40,6 +41,7 @@ Route::get('/databuku',[BukuController::class,'databuku']);
 Route::get('/buku/edit/{id}',[BukuController::class,'edit']);
 Route::post('/ubahbuku/{id}',[BukuController::class,'ubah']);
 Route::get('/hapusbuku/{id}',[BukuController::class,'hapus']);
+Route::get('pinjam_buku',[PinjamBukuController::class,'index']);
 
 
 Route::get('/penerbit',[PenerbitController::class,'index'])->middleware('auth');
