@@ -45,4 +45,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function user(){
+        return $this->hasMany(Transaksi::class, 'user_id', 'id');
+    }
 }
