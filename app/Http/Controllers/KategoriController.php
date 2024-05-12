@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class KategoriController extends Controller
 {
     public function index(Request $request){
-        return view('kategoris');
+        return view('page.kategori.index');
     }
 
     public function kategori(Request $request){

@@ -36,12 +36,11 @@ Route::get('/hapuskategori/{id}',[KategoriController::class,'hapus']);
 
 
 Route::get('/buku', [BukuController::class,'index']);
-Route::post('/bukus', [BukuController::class,'buku']);
+Route::post('/buku', [BukuController::class,'buku']);
 Route::get('/databuku',[BukuController::class,'databuku']);
 Route::get('/buku/edit/{id}',[BukuController::class,'edit']);
 Route::post('/ubahbuku/{id}',[BukuController::class,'ubah']);
 Route::get('/hapusbuku/{id}',[BukuController::class,'hapus']);
-Route::get('pinjam_buku',[PinjamBukuController::class,'index']);
 
 
 Route::get('/penerbit',[PenerbitController::class,'index'])->middleware('auth');
@@ -51,4 +50,6 @@ Route::get('/penerbit/edit/{id}',[PenerbitController::class,'edit']);
 Route::post('/ubahpenerbit/{id}',[PenerbitController::class,'ubah']);
 Route::get('/hapuspenerbit/{id}',[PenerbitController::class,'hapus']);
 
+
+Route::get('/pinjambuku',[PinjamBukuController::class,'index']);
 });

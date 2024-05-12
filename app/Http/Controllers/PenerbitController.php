@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PenerbitController extends Controller
 {
     public function index(Request $request){
-        return view('penerbit');
+        return view('page.penerbit.index');
     }
 
     public function penerbit(Request $request){

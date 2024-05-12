@@ -28,21 +28,26 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="kategori">
             <i class="fas fa-fw fa-bookmark"></i>
             <span>Kategori Buku</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="buku">
             <i class="fas fa-fw fa-book"></i>
             <span>Buku</span></a>
     <li class="nav-item">
-        <a class="nav-link" href="pinjam_buku">
+        <a class="nav-link" href="pinjambuku">
             <i class="fas fa-fw fa-book"></i>
             <span>Pinjam Buku</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="penerbit">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Penerbit</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="users">
             <i class="fas fa-fw fa-users"></i>
             <span>Users</span></a>
     </li>
