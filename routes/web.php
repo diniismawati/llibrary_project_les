@@ -51,5 +51,10 @@ Route::post('/ubahpenerbit/{id}',[PenerbitController::class,'ubah']);
 Route::get('/hapuspenerbit/{id}',[PenerbitController::class,'hapus']);
 
 
+Route ::get('/tambahpeminjaman',[PinjamBukuController::class,'tambahpeminjaman']);
+
 Route::get('/pinjambuku',[PinjamBukuController::class,'index']);
+
+Route::post('/simpantransaksi',[PinjamBukuController::class,'simpantransaksi']);
+Route::get('/caribuku{id}', [PinjamBukuController::class, 'caribuku']);
 });
